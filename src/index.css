@@ -77,6 +77,8 @@ h3 {
   position: sticky;
   top: 0;
   z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
 }
 
 .header__conteudo {
@@ -130,7 +132,7 @@ h3 {
 
 /* ===== Hero ===== */
 .hero {
-  background: linear-gradient(135deg, var(--verde-escuro), var(--verde));
+  background: linear-gradient(135deg, var(--verde) 0%, #3f8f45 60%, #558b2f 100%);
   color: var(--branco);
   padding: 4.5rem 0;
 }
@@ -263,7 +265,7 @@ h3 {
   margin: 0;
 }
 
-/* ===== Celular ===== */
+
 @media (max-width: 720px) {
   .menu-botao {
     display: block;
