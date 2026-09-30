@@ -6,5 +6,5 @@ export const SITE = {
 };
 
 export const EQUIPE = [
-  { nome: "Carol Ramalho", papel: "Desenvolvimento e Pesquisa" },
+  { nome: "Carol Ramalho", papel: "Desenvolvimento front-end, modelagem UML e vídeo pitch" },
 ];

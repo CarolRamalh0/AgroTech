@@ -5,7 +5,7 @@ const LINKS = [
   { para: "/", texto: "Início" },
   { para: "/culturas", texto: "Culturas" },
   { para: "/plantacoes", texto: "Plantações" },
-  { para: "/sobre", texto: "Equipe" },
+  { para: "/sobre", texto: "Sobre" },
 ];
 
 export default function Header() {
