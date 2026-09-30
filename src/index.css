@@ -384,3 +384,192 @@ h3 {
   padding: 2rem;
 }
 
+/* ===== Plantações ===== */
+.cabecalho-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cabecalho-pagina p {
+  margin: 0;
+}
+
+.selo--estatico {
+  position: static;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.resumo {
+  margin-bottom: 1.5rem;
+}
+
+.resumo__titulo {
+  margin: 0 0 0.75rem;
+}
+
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.indicador {
+  display: flex;
+  flex-direction: column;
+  background: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 1rem 1.25rem;
+}
+
+.indicador__valor {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--verde-escuro);
+}
+
+.indicador__rotulo {
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+/* ===== Formulário ===== */
+.formulario {
+  margin-bottom: 1.5rem;
+}
+
+.formulario__grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formulario__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.formulario__campo--largo {
+  grid-column: 1 / -1;
+}
+
+.entrada {
+  font: inherit;
+  font-weight: 400;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  background: var(--branco);
+  color: var(--texto);
+}
+
+.entrada:focus {
+  outline: 2px solid var(--verde);
+  outline-offset: 1px;
+}
+
+.formulario__acoes {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* ===== Alertas ===== */
+.alerta {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.alerta--sucesso {
+  background: var(--verde-claro);
+  color: var(--verde-escuro);
+}
+
+.alerta--erro {
+  background: #fdecea;
+  color: #b3261e;
+}
+
+/* ===== Variações de botão ===== */
+.botao--secundario {
+  background: var(--branco);
+  color: var(--verde-escuro);
+  border: 1px solid var(--borda);
+}
+
+.botao--perigo {
+  background: #fdecea;
+  color: #b3261e;
+}
+
+.botao--pequeno {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+.botao-link {
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rodape-pagina {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ===== Status ===== */
+.status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+}
+
+.status--planejada { background: #e3f2fd; color: #1565c0; }
+.status--crescimento { background: #fff8e1; color: #8d6e00; }
+.status--pronta { background: #e8f5e9; color: #1b5e20; }
+.status--colhida { background: #eeeeee; color: #616161; }
+
+/* ===== Progresso ===== */
+.progresso {
+  height: 8px;
+  background: var(--verde-claro);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progresso__barra {
+  height: 100%;
+  background: linear-gradient(90deg, var(--verde), #7cb342);
+  border-radius: 999px;
+  transition: width 0.4s;
+}
+
+.progresso__texto {
+  font-size: 0.85rem;
+  margin: 0.4rem 0 1rem;
+}
+
+.plantacao__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
